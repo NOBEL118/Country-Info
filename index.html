@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country-Info</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Welcome, To Country-Info</h1>
+  <button id="darkTheme">Dark Mode</button>
+
+  <div class="search">
+    <input type="text" placeholder="Enter a country name ;)" id="input">
+    <button id="search">Search</button>
+  </div>
+
+  <h2 id="fetchInfo">Here's The Detailed Info</h2>
+
+  <div class="info">
+    <div class="card">
+      <h3>Names & Capital</h3>
+      <ul id="names"></ul>
+    </div>
+    <div class="card">
+      <h3>Physical Info</h3>
+      <ul id="physicalInfo"></ul>
+    </div>
+    <div class="card">
+      <h3>Geographical Info</h3>
+      <ul id="geoInfo"></ul>
+    </div>
+  </div>
+
+  <script src="info.js"></script>
+</body>
+
+</html>

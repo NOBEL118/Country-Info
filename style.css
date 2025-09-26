@@ -1,0 +1,155 @@
+:root {
+  --bg: #f9fafb;
+  --text: #1e293b;
+  --card: #ffffff;
+  --muted: #64748b;
+  --accent: #2563eb;
+  --radius: 12px;
+  --gap: 20px;
+  --shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Dark theme variables */
+body.dark {
+  --bg: #0f172a;
+  --text: #f1f5f9;
+  --card: #1e293b;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --shadow: 0 4px 14px rgba(0,0,0,0.4);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  padding: 30px 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin: 30px 0 15px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+button {
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: 0.2s;
+  background: var(--accent);
+  color: white;
+  box-shadow: var(--shadow);
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#darkTheme {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--muted);
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.search input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--muted);
+  border-radius: var(--radius);
+  min-width: 240px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: background 0.3s, color 0.3s;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--muted);
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li img {
+  margin-top: 8px;
+  border: 1px solid var(--muted);
+  border-radius: 6px;
+}
+
+/* Names & Capital */
+.li-common {
+  font-weight: 600;
+  color: var(--accent);
+}
+.li-official {
+  font-style: italic;
+  color: var(--muted);
+}
+.li-capital {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+/* Physical Info */
+.li-population { color: #dc2626; }   /* red */
+.li-area { color: #9333ea; }         /* purple */
+.li-currency { color: #ea580c; }     /* orange */
+.li-language { color: #0891b2; }     /* teal */
+
+/* Geographical Info */
+.li-region { font-weight: bold; }
+.li-subregion { color: #6b21a8; }
+.li-latlng { color: #0284c7; }
+.li-borders { color: #be123c; }
+.li-timezone { color: #15803d; }
+.li-flag { text-align: center; margin-top: 10px; }
+
