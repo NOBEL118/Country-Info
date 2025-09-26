@@ -6,6 +6,8 @@ Country-Info is a simple web app that provides detailed information about countr
 
 https://nobel118.github.io/Country-Info/
 
+https://country-info-mgmpvlzu0-nobels-projects-d61337fb.vercel.app/
+
 🛠 Features
 
 Search countries by name
