@@ -2,9 +2,10 @@ const searchBtn = document.querySelector("#search");
 const namesInfo = document.querySelector("#names");
 const physicalInfo = document.querySelector("#physicalInfo");
 const geoInfo = document.querySelector("#geoInfo");
-
+const input = document.querySelector("#input") ;
 async function info() {
-    const rawInput = document.querySelector("#input").value.trim();
+    const rawInput = input.value.trim();
+    input.value = "" ;
     if (!rawInput) return;
 
     const url = `https://restcountries.com/v3.1/name/${rawInput}`;
